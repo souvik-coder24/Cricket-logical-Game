@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Logic Game</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+   <h1>Cricket Logic Game</h1>
+   <h3>Pick one of them and start your logical Cicket journey here.</h3>
+   <br>
+   <h4>I developed a basic cricket game using vanilla CSS and JavaScript, featuring a clean and modern design. Enjoy straightforward gameplay with intuitive controls, perfect for cricket enthusiasts and casual gamers. This simple yet engaging game captures the essence of cricket for quick and enjoyable play.</h4>
+   <div class="buttons">
+<!--Bat Button-->
+<a onclick="
+generateComputerChoice();
+let resultMsg =getResult('Bat',computerChoice);
+showResult('Bat', computerChoice, resultMsg);
+" href="#"><img src="./assets/bat.png" alt="Bat"></a>
+
+<!--Ball Button-->
+<a onclick="
+generateComputerChoice();
+let resultMsg =getResult('Ball',computerChoice);
+showResult('Ball', computerChoice, resultMsg);
+" href="#"><img src="./assets/ball.jpg" alt="Ball"></a>
+
+<!--Stump Button-->
+<a onclick="
+generateComputerChoice();
+let resultMsg =getResult('Stump',computerChoice);
+showResult('Stump', computerChoice, resultMsg);
+" href="#"><img src="./assets/stump.jpg" alt="Stump"></a>
+
+
+</div>
+
+<div class="reset_button">
+    <!--Reset Button-->
+<a onclick="localStorage.clear()
+resetScore(scoreStr);
+" href="#"><img src="./assets/Reset.png" alt="Reset"></a>
+</div>
+
+    <script src="index.js"></script>
+</body>
+</html>

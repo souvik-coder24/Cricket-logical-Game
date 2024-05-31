@@ -1,0 +1,31 @@
+*{
+   margin: 0;
+   padding: 0;
+   color: grey;
+   font-family: 'Poppins',sans-serif;
+   border: border-box;
+}
+body {
+    text-align: center;
+    background-image: url("assets/Background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 20px;
+ }
+
+ .buttons {
+   display: flex;
+   justify-content: space-evenly;
+ }
+
+ .buttons a img {
+  margin-top: 140px;
+  height: 200px;
+  border-radius: 50%;
+ }
+
+ .reset_button a img {
+   margin-top: 140px;
+   height: 120px;
+  border-radius: 50%;
+ }
